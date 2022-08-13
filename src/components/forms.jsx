@@ -8,7 +8,9 @@ function Forms() {
     // event Handlers
 
     const submitHandler = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
+        const blog = { title, body, author };
+        console.log(blog);
     }
 
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import styles
 import './Styles.css'
 // import Components
@@ -9,25 +9,21 @@ import Forms from './components/Forms';
 import BlogDetails from './BlogDetails';
 
 function App() {
+
   return (
-    <Router>
+    <BrowserRouter>
+
       <div className="App">
         <Navbar />
         <div className="content">
-          {/* <Routes>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/create"> */}
-          <Forms />
-          {/* </Route>
-            <Route path="/blogs/:id">
-              <BlogDetails />
-            </Route>
-          </Routes> */}
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/forms" exact element={<Forms />} />
+          </Routes>
         </div>
-      </div>
-    </Router>
+      </div >
+
+    </BrowserRouter>
   );
 }
 

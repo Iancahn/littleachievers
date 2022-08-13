@@ -10,7 +10,9 @@ function Forms() {
     const submitHandler = (e) => {
         e.preventDefault();
         const blog = { title, body, author };
-        console.log(blog);
+        // console.log(blog);
+
+        // fetch('')
     }
 
     return (

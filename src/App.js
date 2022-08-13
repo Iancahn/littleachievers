@@ -5,7 +5,7 @@ import './Styles.css'
 // import Components
 import Navbar from './components/Navbar';
 import Home from './Home';
-import Forms from './components/forms';
+import Forms from './components/Forms';
 import BlogDetails from './BlogDetails';
 
 function App() {

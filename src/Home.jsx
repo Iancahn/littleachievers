@@ -7,7 +7,9 @@ const Home = () => {
     return (
         <div className="home">
             {error && <div>{error}</div>}
+            {/* This will show Loading while we wait for data from API call */}
             {isPending && <div>Loading...</div>}
+            {/* This will only show blogs when blogs = true(meaning it got data from the API) */}
             {blogs && <BlogList blogs={blogs} />}
         </div>
     );

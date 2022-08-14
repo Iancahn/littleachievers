@@ -6,7 +6,7 @@ function Forms() {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('mario');
     const [isPending, setIsPending] = useState(false);
-    const navigate = useNavigate();
+    const Navigate = useNavigate();
 
     // event Handlers
 
@@ -24,7 +24,9 @@ function Forms() {
         }).then(() => {
             console.log("new blog added");
             setIsPending(false);
-            navigate(-1);
+            Navigate('/');
+            // we could also use:
+            // navigate(-1);
         })
     }
 

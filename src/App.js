@@ -19,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/forms" exact element={<Forms />} />
+            <Route path="/blogs/:id" element={<BlogDetails />} />
           </Routes>
         </div>
       </div >

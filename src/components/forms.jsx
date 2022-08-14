@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Forms() {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('mario');
     const [isPending, setIsPending] = useState(false);
+    const navigate = useNavigate();
 
     // event Handlers
 
@@ -22,6 +24,7 @@ function Forms() {
         }).then(() => {
             console.log("new blog added");
             setIsPending(false);
+            navigate(-1);
         })
     }
 

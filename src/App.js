@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './Home';
 import Forms from './components/Forms';
 import BlogDetails from './BlogDetails';
+import NotFound from './NotFound';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/forms" exact element={<Forms />} />
             <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div >

@@ -17,7 +17,8 @@ function Forms() {
 
         setIsPending(true);
 
-        fetch('http://localhost:8000/blogs', {
+        // fetch('http://localhost:8000/blogs', {
+        fetch('https://jsonkeeper.com/b/I9BJ', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)

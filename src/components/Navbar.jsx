@@ -6,7 +6,7 @@ const Navbar = () => {
             <h1>The Dojo Blog</h1>
             <div className="links">
                 <Link to="/">Home</Link>
-                <Link to="/create" style={{
+                <Link to="/forms" style={{
                     color: 'white',
                     backgroundColor: '#f1356d',
                     borderRadius: '8px'

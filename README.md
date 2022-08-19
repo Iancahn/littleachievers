@@ -1,3 +1,6 @@
+I did not write all the code in this project. I used code from NetNinja + some of my own to setup a front end that could interact with a FireBase database.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
